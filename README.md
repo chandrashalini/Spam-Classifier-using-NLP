@@ -4,10 +4,20 @@ Implementing NLP concepts on the SMS Spam Collection is a public set of SMS labe
 Data taken from UCI site https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection
 ![image](https://user-images.githubusercontent.com/59803099/135151000-1937480a-eb6a-41dc-be3c-1599559f777d.png)
 
-Data Set Information:
-This corpus has been collected from free or free for research sources at the Internet:
--> A collection of 425 SMS spam messages was manually extracted from the Grumbletext Web site. This is a UK forum in which cell phone users make public claims about SMS spam messages, most of them without reporting the very spam message received. The identification of the text of spam messages in the claims is a very hard and time-consuming task, and it involved carefully scanning hundreds of web pages. The Grumbletext Web site is: [Web Link].
--> A subset of 3,375 SMS randomly chosen ham messages of the NUS SMS Corpus (NSC), which is a dataset of about 10,000 legitimate messages collected for research at the Department of Computer Science at the National University of Singapore. The messages largely originate from Singaporeans and mostly from students attending the University. These messages were collected from volunteers who were made aware that their contributions were going to be made publicly available. The NUS SMS Corpus is avalaible at: [Web Link].
--> A list of 450 SMS ham messages collected from Caroline Tag's PhD Thesis available at [Web Link].
--> Finally, we have incorporated the SMS Spam Corpus v.0.1 Big. It has 1,002 SMS ham messages and 322 spam messages and it is public available at: [Web Link]. This corpus has been used in the following academic researches:
+Data Set Information
+
+Dataset contain following data with two columns Message and Label (Ham/Spam)
+![image](https://user-images.githubusercontent.com/59803099/135191004-b280d6d7-541b-47dc-b19e-b1a2436363dc.png)
+
+
+Performed following steps for Spam Classifier
+1. Data Cleaning and  Preprocessing - Used NLTK libraries for removing stop words, Lemmetization, regular expression from the sentences
+2. Created Bag of Words Model - Converted sentences into document matrix using countvectorizer having 5000 words
+![image](https://user-images.githubusercontent.com/59803099/135191470-81f96aa1-f99f-4071-af66-3802288aa5c9.png)
+3. Train Test Split - Test size of 30%
+4. Trained model Naive Bayes Classifier which is good for NLP classifier
+5. Accuracy of the model is 97%
+![image](https://user-images.githubusercontent.com/59803099/135191403-cf887047-8a33-492a-9be3-2f1644388b23.png)
+
+
 
